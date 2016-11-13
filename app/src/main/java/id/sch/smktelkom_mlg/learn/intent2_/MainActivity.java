@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         {
             if(resultCode==RESULT_OK)
             {
-                //String nama = data.getStringExtra(InputActivity.NAMA);
-                //int thnLhr = data.getIntExtra(InputActivity.TAHUN_LAHIR, 0);
+                String nama = data.getStringExtra(InputActivity.NAMA);
+                int thnLhr = data.getIntExtra(InputActivity.TAHUN_LAHIR, 0);
                 TextView tvBiodata = (TextView) findViewById(R.id.textViewBiodata);
-                //tvBiodata.setText("Nama\t\t\t\t\t\t\t\t: "+nama
-                 //       +"\nTahun Kelahiran\t: "+thnLhr);
+                tvBiodata.setText("Nama\t\t\t\t\t\t\t\t: "+nama
+                +"\nTahun Kelahiran\t: "+thnLhr);
             }
         }
     }
